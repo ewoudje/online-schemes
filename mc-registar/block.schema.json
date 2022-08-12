@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "Block",
+  "description": "A block getting registered with properties",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "basic"
+      ]
+    },
+    "unbreakable": {
+      "description": "The unique identifier for a product",
+      "type": "boolean"
+    },
+    "item": {
+      "description": "Properties of the item of the block",
+      "$ref": "https://example.com/item.schema.json"
+    },
+    "destroyTime": {
+      "description": "The time it takes to destroy the block",
+      "type": "number"
+    },
+    "explosionResistance": {
+      "description": "The resistance of the block to explosions",
+      "type": "number"
+    },
+    "material": {
+      "type": "string",
+      "enum": [
+        "minecraft:wood",
+        "minecraft:nether_wood",
+        "minecraft:stone",
+        "minecraft:plant"
+      ]
+    }
+  },
+  "required": [ "type" ]
+}
