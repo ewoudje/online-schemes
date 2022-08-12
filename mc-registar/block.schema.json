@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/product.schema.json",
+  "$id": "http://schema.amogus-sa.ga/mc-registar/block.schema.json",
   "title": "Block",
   "description": "A block getting registered with properties",
   "type": "object",
@@ -17,7 +17,7 @@
     },
     "item": {
       "description": "Properties of the item of the block",
-      "$ref": "https://example.com/item.schema.json"
+      "$ref": "http://schema.amogus-sa.ga/mc-registar/item.schema.json"
     },
     "destroyTime": {
       "description": "The time it takes to destroy the block",
@@ -33,7 +33,13 @@
         "minecraft:wood",
         "minecraft:nether_wood",
         "minecraft:stone",
-        "minecraft:plant"
+        "minecraft:plant",
+        "minecraft:air",
+        "minecraft:metal",
+        "minecraft:heavy_metal",
+        "minecraft:dirt",
+        "minecraft:wool",
+        "minecraft:ice"
       ]
     }
   },
