@@ -28,6 +28,42 @@
         "minecraft:transportation",
         "minecraft:misc"
       ]
+    },
+    "rarity": {
+      "description": "Rarity",
+      "type": "string",
+      "enum": [
+        "COMMON",
+        "UNCOMMON",
+        "RARE",
+        "EPIC"
+      ]
+    },
+    "food": {
+      "description": "Food",
+      "type": "object",
+      "properties": {
+        "hunger": {
+          "description": "Hunger",
+          "type": "integer"
+        },
+        "saturationModifier": {
+          "description": "Saturation",
+          "type": "number"
+        },
+        "canAlwaysEat": {
+          "description": "If the food can be eaten even if the player is full",
+          "type": "boolean"
+        },
+        "meat": {
+          "description": "If the food is a meat",
+          "type": "boolean"
+        },
+        "fast": {
+          "description": "If the food is fast (SPEEDDD)",
+          "type": "boolean"
+        }
+      }
     }
   },
   "required": [ "type" ]

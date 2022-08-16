@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "http://schema.amogus-sa.ga/mc-registar/block.schema.json",
+  "$id": "https://schema.amogus-sa.ga/mc-registar/block.schema.json",
   "title": "Block",
   "description": "A block getting registered with properties",
   "type": "object",
@@ -8,7 +8,8 @@
     "type": {
       "type": "string",
       "enum": [
-        "basic"
+        "basic",
+        "falling"
       ]
     },
     "unbreakable": {
@@ -17,7 +18,7 @@
     },
     "item": {
       "description": "Properties of the item of the block",
-      "$ref": "http://schema.amogus-sa.ga/mc-registar/item.schema.json"
+      "$ref": "https://schema.amogus-sa.ga/mc-registar/item.schema.json"
     },
     "destroyTime": {
       "description": "The time it takes to destroy the block",
@@ -41,6 +42,10 @@
         "minecraft:wool",
         "minecraft:ice"
       ]
+    },
+    "dustColor": {
+      "description": "The color of dust for falling blocks; in hexadecimal string format",
+      "type": "string"
     }
   },
   "required": [ "type" ]
