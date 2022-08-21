@@ -28,23 +28,27 @@
       "description": "The resistance of the block to explosions",
       "type": "number"
     },
-    "material": {
+    "layer": {
+      "description": "https://github.com/ShockMicro/Minecraft-Shaders/wiki/Core-Shaders",
       "type": "string",
       "enum": [
-        "minecraft:wood",
-        "minecraft:nether_wood",
-        "minecraft:stone",
-        "minecraft:plant",
-        "minecraft:air",
-        "minecraft:metal",
-        "minecraft:heavy_metal",
-        "minecraft:dirt",
-        "minecraft:wool",
-        "minecraft:ice"
+        "minecraft:solid",
+        "minecraft:cutout",
+        "minecraft:cutout_mipped",
+        "minecraft:translucent",
+        "minecraft:tripwire"
       ]
     },
     "dustColor": {
       "description": "The color of dust for falling blocks; in hexadecimal string format",
+      "type": "string"
+    },
+    "soundType": {
+      "description": "The soundtype of the block",
+      "type": "string"
+    },
+    "material": {
+      "description": "The material of the block",
       "type": "string"
     }
   },
